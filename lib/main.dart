@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui1/config/app_routes.dart';
+import 'package:ui1/pages/login_page.dart';
 import 'package:ui1/pages/onboarding_page.dart';
 import 'package:ui1/pages/splash_page.dart';
 
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.initial: (context) => SplashPage(),
         AppRoutes.onboarding: (context) => OnboardingPage(),
+        AppRoutes.login: (context) => LoginPage(),
       },
     );
   }

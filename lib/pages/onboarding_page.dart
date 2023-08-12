@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ui1/config/app_colors.dart';
+import 'package:ui1/config/app_routes.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -38,7 +39,9 @@ class OnboardingPage extends StatelessWidget {
             ),
             SizedBox(height: 24),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(AppRoutes.login);
+              },
               child: Text("Start Learning", style: TextStyle(fontSize: 16)),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.primaryColor,
